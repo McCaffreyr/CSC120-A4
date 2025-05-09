@@ -10,7 +10,7 @@ public class Train implements TrainRequirements{
     private int passengerCapacity;
     private Engine myEngine;
 
-    /**Constructer
+    /**Constructer for Train class
      * @param fuelType Train's fuel type
      * @param fuelCapacity Train's fuel capacity
      * @param nCars Number of cars in the train
@@ -30,6 +30,7 @@ public class Train implements TrainRequirements{
     }
 
     /**
+     * Gives engine info
      * @return Engine information
      */
     public Engine getEngine(){
@@ -37,13 +38,16 @@ public class Train implements TrainRequirements{
     }
 
     /**
-     * @return Information about a certain car i
+     * Gives info about a certain car
+     * @param i number of car to get info about
+     * @return info about a certain car i
      */
     public Car getCar(int i){
         return carsattached.get(i);
     }
 
     /**
+     * Gives max capacity of the train
      * @return Max capacity of the train
      */
     public int getMaxCapacity(){
@@ -56,6 +60,7 @@ public class Train implements TrainRequirements{
     }
 
     /**
+     * Gives number of seats left open on the train
      * @return Number of seats left open on the train
      */
     public int seatsRemaining(){

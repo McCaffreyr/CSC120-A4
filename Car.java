@@ -6,7 +6,7 @@ public class Car implements CarRequirements{
     private ArrayList<Passenger> passengersOnboard;
     private int maxCapacity;
 
-    /**Constructer
+    /**Constructer for Car class
      * @param maxCapacity Max capacity of a car
      */
     public Car(int maxCapacity){
@@ -15,6 +15,7 @@ public class Car implements CarRequirements{
     }
 
     /**
+     * Gives car max capactity
      * @return Car's max capacity
      */
     public int getCapacity(){
@@ -22,6 +23,7 @@ public class Car implements CarRequirements{
     }
 
     /**
+     * Gives number of open seats left in the car
      * @return Number of open seats left in the car
      */
     public int seatsRemaining(){
@@ -29,6 +31,8 @@ public class Car implements CarRequirements{
     }
 
     /**
+     * Adds a passenger to the car (if possible)
+     * @param p passenger to add
      * @returns T if the car has room to add another passenger, F if not
      */
     public Boolean addPassenger(Passenger p){
@@ -41,6 +45,8 @@ public class Car implements CarRequirements{
     }
 
     /**
+     * Removes passenger from car
+     * @param p passenger being removed
      * @return T if a passenger is in a car and can be removed, F if they aren't in the car
      */
     public Boolean removePassenger(Passenger p){

@@ -5,7 +5,7 @@ public class Engine implements EngineRequirements{
     private double currentFuelLevel;
     private double maxFuelLevel;
 
-    /**Constructor
+    /**Constructor for Engine class
      * @param f Engine's fuel type
      * @param currentFualLevel Engine's current fuel level
      * @param maxFuelLevel Engine's max fuel level
@@ -16,6 +16,7 @@ public class Engine implements EngineRequirements{
         this.maxFuelLevel = maxFuelLevel;
     }
     /**
+     * Gives fuel type
      * @return Engine's fuel type
      */
     public FuelType getFuelType() {
@@ -23,6 +24,7 @@ public class Engine implements EngineRequirements{
     }
 
     /**
+     * Gives max fuel level
      * @return Engine's max fuel level
      */
     public double getMaxFuel(){
@@ -30,6 +32,7 @@ public class Engine implements EngineRequirements{
     }
 
     /**
+     * Gives current fuel level
      * @return Engine's current fuel level
      */
     public double getCurrentFuel(){
@@ -45,6 +48,7 @@ public class Engine implements EngineRequirements{
 
     /**
      * Subtracts 5 fuel points from the train
+     * @return T/F if the train can go or if it's out of fuel
      */
     public Boolean go(){
         if (this.currentFuelLevel >= 5){
@@ -58,7 +62,8 @@ public class Engine implements EngineRequirements{
     }
 
     /**
-     * Instead of printing where the object is in memory, it will return a stirng
+     * Gives info about Engine
+     * @return info about engine
      */
     public String toString(){
         return ("Engine has fuel type: " + this.f + " current fuel level: " + 
